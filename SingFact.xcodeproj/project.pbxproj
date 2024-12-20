@@ -86,10 +86,10 @@
 		019595D72D0B506000C4331C /* Exceptions for "SingFact" folder in "SingFactWidgetExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Fact.swift,
-				Favorite.swift,
 				"GoogleService-Info.plist",
-				Setting.swift,
+				Models/Fact.swift,
+				Models/Favorite.swift,
+				Models/Setting.swift,
 				SingFact.swift,
 			);
 			target = 0149F2EE2D0AF5210049E8C0 /* SingFactWidgetExtension */;

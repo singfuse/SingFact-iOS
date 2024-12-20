@@ -20,6 +20,7 @@ struct FavoritesView: View {
             }
             .onDelete(perform: deleteItems)
         }
+        .navigationTitle("Favorites")
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 EditButton()
