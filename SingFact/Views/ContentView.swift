@@ -45,6 +45,8 @@ struct ContentView: View {
                 }
                 storeFacts()
                 factsText = nil
+            } else if (error != nil) {
+                factsText = error?.localizedDescription
             } else {
                 factsText = "Empty"
             }
