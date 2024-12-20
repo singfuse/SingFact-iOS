@@ -1,0 +1,982 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		010996102D13089700DDA10E /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		010996122D13089700DDA10E /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		010996132D13089700DDA10E /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		0109967B2D132C5F00DDA10E /* Vinkas in Frameworks */ = {isa = PBXBuildFile; productRef = 0109967A2D132C5F00DDA10E /* Vinkas */; };
+		0109967D2D132C6B00DDA10E /* Vinkas in Frameworks */ = {isa = PBXBuildFile; productRef = 0109967C2D132C6B00DDA10E /* Vinkas */; };
+		011C5EA92D09FB590025C042 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 011C5EA82D09FB590025C042 /* FirebaseFirestore */; };
+		0149F2A92D0AD49D0049E8C0 /* VinkasUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0149F2A82D0AD49D0049E8C0 /* VinkasUI */; };
+		0149F2F22D0AF5210049E8C0 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0149F2F12D0AF5210049E8C0 /* WidgetKit.framework */; };
+		0149F2F42D0AF5210049E8C0 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0149F2F32D0AF5210049E8C0 /* SwiftUI.framework */; };
+		0149F3002D0AF5220049E8C0 /* SingFactWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0149F2EF2D0AF5210049E8C0 /* SingFactWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0169C09C2D097414003B373B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0169C09B2D097414003B373B /* FirebaseAnalytics */; };
+		0169C09E2D097414003B373B /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 0169C09D2D097414003B373B /* FirebaseAppCheck */; };
+		0169C0A32D097D7A003B373B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0169C0A22D097D7A003B373B /* FirebaseAuth */; };
+		019595AF2D0B05A800C4331C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 019595AE2D0B05A800C4331C /* FirebaseAuth */; };
+		019595B12D0B05A800C4331C /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 019595B02D0B05A800C4331C /* FirebaseCore */; };
+		019595B32D0B05A800C4331C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 019595B22D0B05A800C4331C /* FirebaseFirestore */; };
+		019595B52D0B4A4B00C4331C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 019595B42D0B4A4B00C4331C /* FirebaseAnalytics */; };
+		5AE2437CE6CA43FABB65B165 /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = 78ABE7561A304038A6AB9FA3 /* Sentry */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0149F2FE2D0AF5220049E8C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01BBE12B2D02DE3E0098BD34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0149F2EE2D0AF5210049E8C0;
+			remoteInfo = SingFactWidgetExtension;
+		};
+		01BBE1442D02DE400098BD34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01BBE12B2D02DE3E0098BD34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01BBE1322D02DE3E0098BD34;
+			remoteInfo = SingFact;
+		};
+		01BBE14E2D02DE400098BD34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01BBE12B2D02DE3E0098BD34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01BBE1322D02DE3E0098BD34;
+			remoteInfo = SingFact;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0149F3012D0AF5220049E8C0 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0149F3002D0AF5220049E8C0 /* SingFactWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0149F2EF2D0AF5210049E8C0 /* SingFactWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SingFactWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0149F2F12D0AF5210049E8C0 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = /System/Library/Frameworks/WidgetKit.framework; sourceTree = "<absolute>"; };
+		0149F2F32D0AF5210049E8C0 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = /System/Library/Frameworks/SwiftUI.framework; sourceTree = "<absolute>"; };
+		01BBE1332D02DE3E0098BD34 /* SingFact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingFact.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01BBE1432D02DE400098BD34 /* SingFactTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingFactTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01BBE14D2D02DE400098BD34 /* SingFactUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingFactUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01BBE1782D03256E0098BD34 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		019595D52D0B503000C4331C /* Exceptions for "SingFactWidget" folder in "SingFactWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 0149F2EE2D0AF5210049E8C0 /* SingFactWidgetExtension */;
+		};
+		019595D72D0B506000C4331C /* Exceptions for "SingFact" folder in "SingFactWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Fact.swift,
+				Favorite.swift,
+				"GoogleService-Info.plist",
+				Setting.swift,
+				SingFact.swift,
+			);
+			target = 0149F2EE2D0AF5210049E8C0 /* SingFactWidgetExtension */;
+		};
+		01FA1D752D1559D700338994 /* Exceptions for "ci_scripts" folder in "SingFact" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ci_post_clone.sh,
+			);
+			target = 01BBE1322D02DE3E0098BD34 /* SingFact */;
+		};
+		01FA1E0F2D15855700338994 /* Exceptions for "SingFact" folder in "SingFact" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 01BBE1322D02DE3E0098BD34 /* SingFact */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		0149F2F52D0AF5210049E8C0 /* SingFactWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				019595D52D0B503000C4331C /* Exceptions for "SingFactWidget" folder in "SingFactWidgetExtension" target */,
+			);
+			path = SingFactWidget;
+			sourceTree = "<group>";
+		};
+		01BBE1352D02DE3E0098BD34 /* SingFact */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				01FA1E0F2D15855700338994 /* Exceptions for "SingFact" folder in "SingFact" target */,
+				019595D72D0B506000C4331C /* Exceptions for "SingFact" folder in "SingFactWidgetExtension" target */,
+			);
+			path = SingFact;
+			sourceTree = "<group>";
+		};
+		01BBE1462D02DE400098BD34 /* SingFactTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SingFactTests;
+			sourceTree = "<group>";
+		};
+		01BBE1502D02DE400098BD34 /* SingFactUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SingFactUITests;
+			sourceTree = "<group>";
+		};
+		01FA1D712D15577100338994 /* ci_scripts */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				01FA1D752D1559D700338994 /* Exceptions for "ci_scripts" folder in "SingFact" target */,
+			);
+			path = ci_scripts;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0149F2EC2D0AF5210049E8C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0149F2F42D0AF5210049E8C0 /* SwiftUI.framework in Frameworks */,
+				019595AF2D0B05A800C4331C /* FirebaseAuth in Frameworks */,
+				0109967D2D132C6B00DDA10E /* Vinkas in Frameworks */,
+				019595B52D0B4A4B00C4331C /* FirebaseAnalytics in Frameworks */,
+				019595B12D0B05A800C4331C /* FirebaseCore in Frameworks */,
+				019595B32D0B05A800C4331C /* FirebaseFirestore in Frameworks */,
+				0149F2F22D0AF5210049E8C0 /* WidgetKit.framework in Frameworks */,
+				5AE2437CE6CA43FABB65B165 /* Sentry in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01BBE1302D02DE3E0098BD34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0169C09E2D097414003B373B /* FirebaseAppCheck in Frameworks */,
+				0169C0A32D097D7A003B373B /* FirebaseAuth in Frameworks */,
+				0109967B2D132C5F00DDA10E /* Vinkas in Frameworks */,
+				0149F2A92D0AD49D0049E8C0 /* VinkasUI in Frameworks */,
+				0169C09C2D097414003B373B /* FirebaseAnalytics in Frameworks */,
+				011C5EA92D09FB590025C042 /* FirebaseFirestore in Frameworks */,
+				010996102D13089700DDA10E /* (null) in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01BBE1402D02DE400098BD34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				010996122D13089700DDA10E /* (null) in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01BBE14A2D02DE400098BD34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				010996132D13089700DDA10E /* (null) in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0149F2F02D0AF5210049E8C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0149F2F12D0AF5210049E8C0 /* WidgetKit.framework */,
+				0149F2F32D0AF5210049E8C0 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		01BBE12A2D02DE3E0098BD34 = {
+			isa = PBXGroup;
+			children = (
+				01FA1D712D15577100338994 /* ci_scripts */,
+				01BBE1782D03256E0098BD34 /* .gitignore */,
+				01BBE1352D02DE3E0098BD34 /* SingFact */,
+				01BBE1462D02DE400098BD34 /* SingFactTests */,
+				01BBE1502D02DE400098BD34 /* SingFactUITests */,
+				0149F2F52D0AF5210049E8C0 /* SingFactWidget */,
+				0149F2F02D0AF5210049E8C0 /* Frameworks */,
+				01BBE1342D02DE3E0098BD34 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01BBE1342D02DE3E0098BD34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01BBE1332D02DE3E0098BD34 /* SingFact.app */,
+				01BBE1432D02DE400098BD34 /* SingFactTests.xctest */,
+				01BBE14D2D02DE400098BD34 /* SingFactUITests.xctest */,
+				0149F2EF2D0AF5210049E8C0 /* SingFactWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0149F2EE2D0AF5210049E8C0 /* SingFactWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0149F3052D0AF5220049E8C0 /* Build configuration list for PBXNativeTarget "SingFactWidgetExtension" */;
+			buildPhases = (
+				0149F2EB2D0AF5210049E8C0 /* Sources */,
+				0149F2EC2D0AF5210049E8C0 /* Frameworks */,
+				0149F2ED2D0AF5210049E8C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				0149F2F52D0AF5210049E8C0 /* SingFactWidget */,
+			);
+			name = SingFactWidgetExtension;
+			packageProductDependencies = (
+				019595AE2D0B05A800C4331C /* FirebaseAuth */,
+				019595B02D0B05A800C4331C /* FirebaseCore */,
+				019595B22D0B05A800C4331C /* FirebaseFirestore */,
+				019595B42D0B4A4B00C4331C /* FirebaseAnalytics */,
+				0109967C2D132C6B00DDA10E /* Vinkas */,
+			);
+			productName = SingFactWidgetExtension;
+			productReference = 0149F2EF2D0AF5210049E8C0 /* SingFactWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		01BBE1322D02DE3E0098BD34 /* SingFact */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01BBE1572D02DE400098BD34 /* Build configuration list for PBXNativeTarget "SingFact" */;
+			buildPhases = (
+				01BBE12F2D02DE3E0098BD34 /* Sources */,
+				01BBE1302D02DE3E0098BD34 /* Frameworks */,
+				01BBE1312D02DE3E0098BD34 /* Resources */,
+				0149F3012D0AF5220049E8C0 /* Embed Foundation Extensions */,
+				50D6DD30941A4B1490C558C4 /* Upload Debug Symbols to Sentry */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0149F2FF2D0AF5220049E8C0 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				01BBE1352D02DE3E0098BD34 /* SingFact */,
+				01FA1D712D15577100338994 /* ci_scripts */,
+			);
+			name = SingFact;
+			packageProductDependencies = (
+				0169C09B2D097414003B373B /* FirebaseAnalytics */,
+				0169C09D2D097414003B373B /* FirebaseAppCheck */,
+				0169C0A22D097D7A003B373B /* FirebaseAuth */,
+				011C5EA82D09FB590025C042 /* FirebaseFirestore */,
+				0149F2A82D0AD49D0049E8C0 /* VinkasUI */,
+				0109967A2D132C5F00DDA10E /* Vinkas */,
+			);
+			productName = SingFact;
+			productReference = 01BBE1332D02DE3E0098BD34 /* SingFact.app */;
+			productType = "com.apple.product-type.application";
+		};
+		01BBE1422D02DE400098BD34 /* SingFactTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01BBE15A2D02DE400098BD34 /* Build configuration list for PBXNativeTarget "SingFactTests" */;
+			buildPhases = (
+				01BBE13F2D02DE400098BD34 /* Sources */,
+				01BBE1402D02DE400098BD34 /* Frameworks */,
+				01BBE1412D02DE400098BD34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01BBE1452D02DE400098BD34 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				01BBE1462D02DE400098BD34 /* SingFactTests */,
+			);
+			name = SingFactTests;
+			packageProductDependencies = (
+			);
+			productName = SingFactTests;
+			productReference = 01BBE1432D02DE400098BD34 /* SingFactTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		01BBE14C2D02DE400098BD34 /* SingFactUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01BBE15D2D02DE400098BD34 /* Build configuration list for PBXNativeTarget "SingFactUITests" */;
+			buildPhases = (
+				01BBE1492D02DE400098BD34 /* Sources */,
+				01BBE14A2D02DE400098BD34 /* Frameworks */,
+				01BBE14B2D02DE400098BD34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01BBE14F2D02DE400098BD34 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				01BBE1502D02DE400098BD34 /* SingFactUITests */,
+			);
+			name = SingFactUITests;
+			packageProductDependencies = (
+			);
+			productName = SingFactUITests;
+			productReference = 01BBE14D2D02DE400098BD34 /* SingFactUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01BBE12B2D02DE3E0098BD34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					0149F2EE2D0AF5210049E8C0 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					01BBE1322D02DE3E0098BD34 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					01BBE1422D02DE400098BD34 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 01BBE1322D02DE3E0098BD34;
+					};
+					01BBE14C2D02DE400098BD34 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 01BBE1322D02DE3E0098BD34;
+					};
+				};
+			};
+			buildConfigurationList = 01BBE12E2D02DE3E0098BD34 /* Build configuration list for PBXProject "SingFact" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01BBE12A2D02DE3E0098BD34;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				0169C09A2D097414003B373B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				011C5EA32D09F2590025C042 /* XCRemoteSwiftPackageReference "vinkas-swift" */,
+				6D60188F9D3A47E3AEB90E84 /* XCRemoteSwiftPackageReference "sentry-cocoa" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 01BBE1342D02DE3E0098BD34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01BBE1322D02DE3E0098BD34 /* SingFact */,
+				01BBE1422D02DE400098BD34 /* SingFactTests */,
+				01BBE14C2D02DE400098BD34 /* SingFactUITests */,
+				0149F2EE2D0AF5210049E8C0 /* SingFactWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0149F2ED2D0AF5210049E8C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01BBE1312D02DE3E0098BD34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01BBE1412D02DE400098BD34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01BBE14B2D02DE400098BD34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50D6DD30941A4B1490C558C4 /* Upload Debug Symbols to Sentry */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+			);
+			name = "Upload Debug Symbols to Sentry";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script is responsable to upload debug symbols and source context for Sentry.\nif which sentry-cli >/dev/null; then\nexport SENTRY_ORG=vinkas\nexport SENTRY_PROJECT=singfact-ios\nERROR=$(sentry-cli debug-files upload --include-sources \"$DWARF_DSYM_FOLDER_PATH\" 2>&1 >/dev/null)\nif [ ! $? -eq 0 ]; then\necho \"warning: sentry-cli - $ERROR\"\nfi\nelse\necho \"warning: sentry-cli not installed, download from https://github.com/getsentry/sentry-cli/releases\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0149F2EB2D0AF5210049E8C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01BBE12F2D02DE3E0098BD34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01BBE13F2D02DE400098BD34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01BBE1492D02DE400098BD34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0149F2FF2D0AF5220049E8C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0149F2EE2D0AF5210049E8C0 /* SingFactWidgetExtension */;
+			targetProxy = 0149F2FE2D0AF5220049E8C0 /* PBXContainerItemProxy */;
+		};
+		01BBE1452D02DE400098BD34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01BBE1322D02DE3E0098BD34 /* SingFact */;
+			targetProxy = 01BBE1442D02DE400098BD34 /* PBXContainerItemProxy */;
+		};
+		01BBE14F2D02DE400098BD34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01BBE1322D02DE3E0098BD34 /* SingFact */;
+			targetProxy = 01BBE14E2D02DE400098BD34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0149F3022D0AF5220049E8C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SingFactWidget/SingFactWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 7JN22R93FV;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SingFactWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "SingFact Widgets";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.singfact.widgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				XROS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		0149F3032D0AF5220049E8C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SingFactWidget/SingFactWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 7JN22R93FV;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SingFactWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "SingFact Widgets";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.singfact.widgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				XROS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		01BBE1552D02DE400098BD34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		01BBE1562D02DE400098BD34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01BBE1582D02DE400098BD34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SingFact/SingFact.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"SingFact/Preview Content\"";
+				DEVELOPMENT_TEAM = 7JN22R93FV;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SingFact/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SingFact;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.singfact;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01BBE1592D02DE400098BD34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SingFact/SingFact.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"SingFact/Preview Content\"";
+				DEVELOPMENT_TEAM = 7JN22R93FV;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SingFact/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SingFact;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.singfact;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		01BBE15B2D02DE400098BD34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7JN22R93FV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.singfact.SingFactTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SingFact.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SingFact";
+			};
+			name = Debug;
+		};
+		01BBE15C2D02DE400098BD34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7JN22R93FV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.singfact.SingFactTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SingFact.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SingFact";
+			};
+			name = Release;
+		};
+		01BBE15E2D02DE400098BD34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7JN22R93FV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.singfact.SingFactUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SingFact;
+			};
+			name = Debug;
+		};
+		01BBE15F2D02DE400098BD34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7JN22R93FV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.singfact.SingFactUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SingFact;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0149F3052D0AF5220049E8C0 /* Build configuration list for PBXNativeTarget "SingFactWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0149F3022D0AF5220049E8C0 /* Debug */,
+				0149F3032D0AF5220049E8C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01BBE12E2D02DE3E0098BD34 /* Build configuration list for PBXProject "SingFact" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01BBE1552D02DE400098BD34 /* Debug */,
+				01BBE1562D02DE400098BD34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01BBE1572D02DE400098BD34 /* Build configuration list for PBXNativeTarget "SingFact" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01BBE1582D02DE400098BD34 /* Debug */,
+				01BBE1592D02DE400098BD34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01BBE15A2D02DE400098BD34 /* Build configuration list for PBXNativeTarget "SingFactTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01BBE15B2D02DE400098BD34 /* Debug */,
+				01BBE15C2D02DE400098BD34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01BBE15D2D02DE400098BD34 /* Build configuration list for PBXNativeTarget "SingFactUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01BBE15E2D02DE400098BD34 /* Debug */,
+				01BBE15F2D02DE400098BD34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		011C5EA32D09F2590025C042 /* XCRemoteSwiftPackageReference "vinkas-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vinkashq/vinkas-swift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		0169C09A2D097414003B373B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.6.0;
+			};
+		};
+		6D60188F9D3A47E3AEB90E84 /* XCRemoteSwiftPackageReference "sentry-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/getsentry/sentry-cocoa/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0109967A2D132C5F00DDA10E /* Vinkas */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 011C5EA32D09F2590025C042 /* XCRemoteSwiftPackageReference "vinkas-swift" */;
+			productName = Vinkas;
+		};
+		0109967C2D132C6B00DDA10E /* Vinkas */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 011C5EA32D09F2590025C042 /* XCRemoteSwiftPackageReference "vinkas-swift" */;
+			productName = Vinkas;
+		};
+		011C5EA82D09FB590025C042 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0169C09A2D097414003B373B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		0149F2A82D0AD49D0049E8C0 /* VinkasUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 011C5EA32D09F2590025C042 /* XCRemoteSwiftPackageReference "vinkas-swift" */;
+			productName = VinkasUI;
+		};
+		0169C09B2D097414003B373B /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0169C09A2D097414003B373B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		0169C09D2D097414003B373B /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0169C09A2D097414003B373B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		0169C0A22D097D7A003B373B /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0169C09A2D097414003B373B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		019595AE2D0B05A800C4331C /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0169C09A2D097414003B373B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		019595B02D0B05A800C4331C /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0169C09A2D097414003B373B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		019595B22D0B05A800C4331C /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0169C09A2D097414003B373B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		019595B42D0B4A4B00C4331C /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0169C09A2D097414003B373B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		78ABE7561A304038A6AB9FA3 /* Sentry */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D60188F9D3A47E3AEB90E84 /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
+			productName = Sentry;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 01BBE12B2D02DE3E0098BD34 /* Project object */;
+}
