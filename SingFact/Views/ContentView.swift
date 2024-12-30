@@ -93,7 +93,7 @@ struct ContentView: View {
     }
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             if authModel.isAuthenticated {
                 List {
                     if (factsText != nil) {
